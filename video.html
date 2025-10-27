@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oman Railway | Interactive Video</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+  <h1>Oman Railway Multimedia Project</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Images</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="audio.html">Audio</a></li>
+      <li><a href="threeD.html">3D</a></li>
+      <li><a href="evaluation.html">Evaluation</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <main>
+    <section class="video-intro">
+      <h2>Final Edited Oman Railway Video</h2>
+      <p>
+        This 1-minute video showcases the visual editing phase of the Oman Railway Web project.
+        It features professional post-production elements including color correction, enhancement,
+        text animation, and motion graphics — all combined to portray the progress and innovation of Oman’s railway vision.
+      </p>
+    </section>
+
+    <section class="video-container">
+      <div class="video-wrapper">
+        <!-- 🎬 Working video without <track> -->
+        <video id="railVideo" width="100%" preload="metadata">
+          <source src="media/video/1-min-final-vd.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+
+        <!-- Custom controls -->
+        <div class="video-controls">
+          <button id="playPause">▶️ Play</button>
+          <input type="range" id="seekBar" value="0" min="0" max="100">
+          <button id="mute">🔇 Mute</button>
+          <button id="restart">⏮ Restart</button>
+        </div>
+
+        <!-- Interactive overlay -->
+        <div id="infoOverlay" class="choice-overlay hidden">
+          <h3>Did You Know?</h3>
+          <p>
+            The Oman Railway Project links major industrial areas and ports, promoting sustainable transport and trade growth.
+          </p>
+        </div>
+
+        <!-- YouTube fallback -->
+        <div id="youtubeFallback" class="hidden">
+          <iframe width="100%" height="400"
+            src="https://www.youtube.com/embed/your_youtube_video_id"
+            title="Oman Railway Video"
+            frameborder="0" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="rationale">
+      <h3>Design Rationale</h3>
+      <p>
+        The Oman Railway video was edited using CapCut and DaVinci Resolve, focusing on color grading, exposure correction,
+        and animated text transitions. Hardcoded captions were integrated during post-production for accessibility and clarity.
+        Graphic overlays highlight major milestones and project visuals. The video player uses custom JavaScript-based controls
+        to offer play, pause, and seek interactivity, enhancing user engagement. A pop-up overlay introduces key facts midway,
+        and fallback support ensures compatibility with all modern browsers. This approach demonstrates strong integration of
+        multimedia design, accessibility, and interactivity, fully satisfying GIS6009’s Moving Image phase requirements.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Oman Railway Multimedia Project | GIS6009</p>
+  </footer>
+
+  <script src="js/video.js"></script>
+</body>
+</html>

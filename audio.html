@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oman Railway | Audio Experience</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+  <h1>Oman Railway Multimedia Project</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Images</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="audio.html">Audio</a></li>
+      <li><a href="threeD.html">3D</a></li>
+      <li><a href="evaluation.html">Evaluation</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <main>
+    <section class="audio-intro">
+      <h2>Oman Railway Sound Experience</h2>
+      <p>
+        This audio composition blends real-world and designed sounds inspired by Oman’s evolving rail network.
+        The mix features ambient environment, train motion, voice narration, and subtle background music —
+        combined through digital audio editing to create a cinematic listening experience.
+      </p>
+    </section>
+
+    <section class="audio-container">
+      <div class="audio-player">
+        <audio id="railAudio" preload="metadata">
+          <source src="media/audio/oman-rail-soundmix.mp3" type="audio/mpeg">
+          Your browser does not support HTML5 audio.
+        </audio>
+
+        <!-- Custom Controls -->
+        <div class="audio-controls">
+          <button id="playPauseAudio">▶️ Play</button>
+          <input type="range" id="seekAudio" value="0" min="0" max="100">
+          <button id="muteAudio">🔇 Mute</button>
+          <label for="volumeSlider">🔊 Volume</label>
+          <input type="range" id="volumeSlider" min="0" max="1" step="0.05" value="1">
+        </div>
+      </div>
+
+      <!-- Interactive audio info overlay -->
+      <div id="audioInfo" class="choice-overlay hidden">
+        <h3>Sound Design Insight</h3>
+        <p>
+          You are now hearing layered sound effects that represent station ambience and modern train motion — edited with reverb and equalization.
+        </p>
+      </div>
+    </section>
+
+    <section class="rationale">
+      <h3>Design Rationale</h3>
+      <p>
+        The Oman Railway sound mix was produced using <strong>Audacity</strong> and <strong>Adobe Audition</strong>.
+        Four distinct sources were layered — voice narration, railway ambient recordings, metallic sound effects, and a background soundtrack.
+        Editing techniques included fade-in/out for smoother transitions, stereo panning to emulate train motion,
+        and EQ adjustments to balance frequencies. Volume envelopes were automated for dynamic emphasis.
+        The final export was compressed to MP3 for efficient web streaming.
+        The interactive audio player provides playback, mute, and volume control,
+        while a mid-play overlay introduces design insights for a more engaging experience.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Oman Railway Multimedia Project | GIS6009</p>
+  </footer>
+
+  <script src="js/audio.js"></script>
+</body>
+</html>
